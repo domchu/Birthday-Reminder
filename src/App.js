@@ -7,9 +7,9 @@ function App() {
     <main>
       <section className="container">
         <h2>Birthday Reminder</h2>
-        <h3>0 Birthday today</h3>
-        <List />
-        <button onClick={() => {}}>Clear All</button>
+        <h3>{people.length} Birthday today</h3>
+        <List people={people} />
+        <button onClick={() => setPeople([])}>Clear All</button>
       </section>
     </main>
   );
